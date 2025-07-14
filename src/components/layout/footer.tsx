@@ -87,10 +87,6 @@ export function Footer() {
       <div className="bg-accent py-4">
         <div className="container mx-auto px-4 text-center text-sm">
           <p>© Copyright - Trident Automation - All Rights Reserved.</p>
-          <p className="mt-1">
-            <span>Designed & Developed by </span>
-            <span className="text-primary-foreground">MGX</span>
-          </p>
         </div>
       </div>
     </footer>

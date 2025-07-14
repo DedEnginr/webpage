@@ -112,7 +112,7 @@ export default function Footer() {
             © Copyright - <Link to="/" className="hover:text-blue-400">Trident Automation</Link> - All Rights Reserved.
           </p>
           <p className="text-gray-400 text-sm">
-            Designed & Developed by MGX
+            Designed & Developed by Ganapathy
           </p>
         </div>
       </div>

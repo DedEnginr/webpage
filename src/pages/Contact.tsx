@@ -24,7 +24,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-10">
+      {/* <section className="py-10">
         <div className="container mx-auto px-4">
           <div className="bg-muted p-4 rounded-lg shadow-inner">
             <div className="aspect-w-16 aspect-h-9">
@@ -40,7 +40,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }

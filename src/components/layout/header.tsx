@@ -11,7 +11,7 @@ export function Header() {
 
   const navItems = [
     { name: 'HOME', path: '/' },
-    { name: 'ABOUT US', path: '/about' },
+    { name: 'ABOUT US', path: '#about-us' },
     { name: 'PRODUCTS', path: '/products' },
     { name: 'SERVICES', path: '/services' },
     { name: 'PROJECTS', path: '/projects' },
@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header className="w-full">
       {/* Top bar */}
-      <div className="bg-primary text-primary-foreground py-2">
+      {/* <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
           <div className="flex flex-wrap items-center space-x-6">
             <div className="flex items-center space-x-2 text-sm">
@@ -43,14 +43,14 @@ export function Header() {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main header */}
       <div className="bg-card py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-primary text-primary-foreground rounded-sm flex items-center justify-center">
-              <Shield size={20} />
+            <div className="w-10 h-10 rounded-sm flex items-center justify-center">
+              <img src="/assets/images/logo.png" />
             </div>
             <div className="flex items-center">
               <span className="text-2xl font-bold text-primary">Trident</span>
