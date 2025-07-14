@@ -8,7 +8,7 @@ export function HeroSection() {
       <div 
         className="absolute inset-0 bg-primary/80 z-0"
         style={{
-          backgroundImage: 'url("/assets/images/industrial-machinery.jpg")',
+          backgroundImage: 'url("/assets/images/hero.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay'
