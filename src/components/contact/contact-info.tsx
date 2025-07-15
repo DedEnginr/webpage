@@ -1,35 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
+import { ADDRESS, MAIL, MOBILE, PHONE_NOS } from "@/lib/constants";
 
 export function ContactInfo() {
   const contactDetails = [
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Our Location",
-      details: [
-        "123 Industrial Avenue",
-        "Tech Park, Suite 456",
-        "Automation City, AC 98765"
-      ]
+      details: ADDRESS
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone Number",
-      details: [
-        "+1 (555) 123-4567",
-        "+1 (555) 987-6543"
-      ],
-      link: "tel:+15551234567"
+      details: PHONE_NOS,
+      link: "tel:" + MOBILE
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email Address",
       details: [
-        "info@nextechsolutions.com",
-        "support@nextechsolutions.com"
+        MAIL
       ],
-      link: "mailto:info@nextechsolutions.com"
+      link: "mailto:" + MAIL
     },
     {
       icon: <Clock className="h-5 w-5" />,
@@ -69,9 +62,9 @@ export function ContactInfo() {
   return (
     <div className="space-y-8">
       <h2 className="text-2xl font-bold text-primary">Contact Information</h2>
-      
+
       {/* Direct Contact Buttons */}
-      <div className="mb-8">
+      {/* <div className="mb-8">
         <h3 className="text-xl font-semibold mb-4">Contact Us Directly</h3>
         <div className="flex flex-wrap gap-4">
           {directContactMethods.map((method, index) => (
@@ -91,8 +84,8 @@ export function ContactInfo() {
             </a>
           ))}
         </div>
-      </div>
-      
+      </div> */}
+
       {/* Contact Details Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {contactDetails.map((item, index) => (
@@ -109,8 +102,8 @@ export function ContactInfo() {
                       <p key={idx}>{detail}</p>
                     ))}
                     {item.link && (
-                      <a 
-                        href={item.link} 
+                      <a
+                        href={item.link}
                         className="text-primary hover:underline block mt-2"
                       >
                         Click to {item.title === "Phone Number" ? "call" : "email"}

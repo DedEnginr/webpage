@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
+import { MAIL } from "@/lib/constants";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -25,10 +26,20 @@ export function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    };
+
+    await fetch("https://formsubmit.co/ajax/" + MAIL, options);
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -54,7 +65,7 @@ export function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="name">Full Name *</Label>
-              <Input 
+              <Input
                 id="name"
                 name="name"
                 placeholder="Enter your name"
@@ -63,10 +74,10 @@ export function ContactForm() {
                 required
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="email">Email Address *</Label>
-              <Input 
+              <Input
                 id="email"
                 name="email"
                 type="email"
@@ -76,10 +87,10 @@ export function ContactForm() {
                 required
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number</Label>
-              <Input 
+              <Input
                 id="phone"
                 name="phone"
                 placeholder="Enter your phone number"
@@ -87,10 +98,10 @@ export function ContactForm() {
                 onChange={handleChange}
               />
             </div>
-            
+
             <div className="space-y-2">
               <Label htmlFor="company">Company Name</Label>
-              <Input 
+              <Input
                 id="company"
                 name="company"
                 placeholder="Enter your company name"
@@ -99,10 +110,10 @@ export function ContactForm() {
               />
             </div>
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="subject">Subject *</Label>
-            <Input 
+            <Input
               id="subject"
               name="subject"
               placeholder="Enter message subject"
@@ -111,10 +122,10 @@ export function ContactForm() {
               required
             />
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="message">Message *</Label>
-            <Textarea 
+            <Textarea
               id="message"
               name="message"
               placeholder="Enter your message"
@@ -124,9 +135,9 @@ export function ContactForm() {
               required
             />
           </div>
-          
-          <Button 
-            type="submit" 
+
+          <Button
+            type="submit"
             className="w-full"
             disabled={isSubmitting}
           >

@@ -1,25 +1,34 @@
 import { Layout } from "@/components/layout/layout";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ContactInfo } from "@/components/contact/contact-info";
+import ContactSection from "@/components/contact/contact-section";
 
 export default function ContactPage() {
   return (
     <Layout>
-      <div className="bg-primary py-20">
-        <div className="container mx-auto px-4 text-center text-primary-foreground">
+      <div className="bg-primary flex items-center justify-between">
+        <div className="mx-auto px-4 text-primary-foreground">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="max-w-2xl mx-auto">
-            Have questions or need assistance with your industrial automation needs? 
+            Have questions or need assistance with your industrial automation needs?
             Get in touch with our team of experts today.
           </p>
         </div>
+        <div className="flex-shrink-0 w-1/2">
+          <img
+            className="w-full h-80 object-cover shadow-md"
+            src="https://picsum.photos/seed/gpt/200/300"
+            alt="Hero"
+          />
+        </div>
       </div>
 
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="bg-background">
+        <ContactSection />
+        <div className="container my-32 mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <ContactInfo />
             <ContactForm />
+            <ContactInfo />
           </div>
         </div>
       </section>
