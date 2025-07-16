@@ -27,7 +27,7 @@ export function HeroSection() {
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link to="/services">Our Services</Link>
             </Button>
-            <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>

@@ -27,9 +27,9 @@ export function WhyChooseSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="text-blue-600 font-semibold mb-2">WHY CHOOSE US?</div>
-          <h2 className="text-3xl font-bold mb-4">Why Choose NexTech Solutions</h2>
+          <h2 className="text-3xl font-bold mb-4">Why Choose Trident Automation</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            NexTech Solutions strives to maintain its position as a leading automation company
+            Trident Automation strives to maintain its position as a leading automation company
             providing world-class services and customer support, building our business on a
             foundation of highly satisfied customers at both OEM and end-user levels.
           </p>

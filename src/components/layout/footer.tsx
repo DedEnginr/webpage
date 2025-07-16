@@ -56,10 +56,11 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">CONTACT US</h3>
-            <p className="mb-2">123 Innovation Drive,</p>
-            <p className="mb-2">Tech Park, CA 94043</p>
+            <p className="mb-2">Trident Automation</p>
+            <p className="mb-2">9/A Mandaveli 1st street,</p>
+            <p className="mb-2">Nerkundram chennai - 600107</p>
             <p className="mb-2">
-              <a href="tel:+15551234567" className="hover:text-accent-foreground transition-colors duration-200">+1-555-123-4567</a>
+              <a href="tel:+91 73387 43478" className="hover:text-accent-foreground transition-colors duration-200">+91 73387 43478</a>
             </p>
             <p className="mb-4">
               <a href="mailto:info@tridentautomation.com" className="hover:text-accent-foreground transition-colors duration-200">
