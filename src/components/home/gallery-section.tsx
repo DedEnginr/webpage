@@ -12,12 +12,12 @@ export function GallerySection() {
   } | null>(null);
   
   const galleryImages = [
-    {
+    /*{
       src: "/assets/images/factory-automation.jpg",
       alt: "Factory Automation Systems",
       title: "Smart Factory Integration",
       description: "Complete factory automation system with advanced PLC controls"
-    },
+    },*/
     {
       src: "/assets/images/control-panel.jpg",
       alt: "Industrial Control Panels",
@@ -36,18 +36,18 @@ export function GallerySection() {
       title: "Process Control System",
       description: "Complete SCADA system for manufacturing process control"
     },
-    {
+    /*{
       src: "/assets/images/factory-robot.jpg",
       alt: "Industrial Robotics",
       title: "Robotic Integration",
       description: "Industrial robot integration with safety systems"
-    },
-    {
+    },*/
+    /*{
       src: "/assets/images/assembly-line.jpg",
       alt: "Assembly Line Automation",
       title: "Assembly Line Control",
       description: "Fully automated assembly line with distributed control systems"
-    }
+    }*/
   ];
 
   const openModal = (image: typeof galleryImages[0]) => {

@@ -5,7 +5,8 @@ export function PartnersSection() {
     { name: "Omron", logo: "/assets/brands/omron.png" },
     { name: "Allen-Bradley", logo: "/assets/brands/allen-bradley.png" },
     { name: "Schneider Electric", logo: "/assets/brands/schneider.png" },
-    { name: "ABB", logo: "/assets/brands/abb.png" }
+    { name: "ABB", logo: "/assets/brands/abb.png" },
+    { name: "FANUC", logo: "/assets/brands/fanuc.png" }
   ];
 
   return (

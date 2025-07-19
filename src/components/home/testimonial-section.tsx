@@ -8,26 +8,26 @@ export function TestimonialSection() {
       id: 1,
       name: "Michael Johnson",
       position: "Production Manager",
-      company: "IndusTech Manufacturing",
-      quote: "NexTech Solutions completely transformed our production line with their PLC programming expertise. Their team's attention to detail and commitment to quality resulted in a 30% increase in our production efficiency.",
+      company: "Need client Name",
+      quote: "Trident Automation completely transformed our production line with their PLC programming expertise. Their team's attention to detail and commitment to quality resulted in a 30% increase in our production efficiency.",
       image: "/assets/images/testimonial1.jpg"
     },
     {
       id: 2,
       name: "Sarah Williams",
       position: "Operations Director",
-      company: "EcoProcess Systems",
-      quote: "We've been working with NexTech Solutions for over 5 years now, and they continue to impress us with their innovative automation solutions. Their technical support is unmatched in the industry.",
+      company: "Need client Name",
+      quote: "We've been working with Trident Automation, and they continue to impress us with their innovative automation solutions. Their technical support is unmatched in the industry.",
       image: "/assets/images/testimonial2.jpg"
     },
-    {
+    /*{
       id: 3,
       name: "Robert Chen",
       position: "Chief Engineer",
       company: "GlobalTech Industries",
       quote: "The HMI system designed by NexTech Solutions has significantly improved our monitoring capabilities. The user interface is intuitive and has reduced training time for new operators by 50%.",
       image: "/assets/images/testimonial3.jpg"
-    }
+    }*/
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
