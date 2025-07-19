@@ -5,7 +5,7 @@ export function AboutSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-primary">Who We Are</h2>
           <p className="max-w-3xl mx-auto text-muted-foreground">
-            Trident Automation is a leading provider of industrial automation solutions with over two decades of experience in the field.
+            Trident Automation is a leading provider of industrial automation solutions with years of experience in the field.
           </p>
         </div>
         
