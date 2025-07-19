@@ -7,7 +7,7 @@ import { WhyChooseSection } from "@/components/home/why-choose-section";
 import { GallerySection } from "@/components/home/gallery-section";
 import { TestimonialSection } from "@/components/home/testimonial-section";
 import { PartnersSection } from "@/components/home/partners-section";
-import { CallToAction } from "@/components/home/call-to-action";
+/*import { CallToAction } from "@/components/home/call-to-action";*/
 
 export default function IndexPage() {
   return (
@@ -19,7 +19,6 @@ export default function IndexPage() {
       <GallerySection />
       <TestimonialSection />
       <PartnersSection />
-      <CallToAction />
     </Layout>
   );
 }
