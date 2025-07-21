@@ -14,6 +14,12 @@ export function HeroSection() {
           backgroundBlendMode: 'overlay'
         }}
       />
+
+      <img
+        src="/assets/images/logo-hero.png"
+        alt="Overlay Image"
+        className="absolute right-10 bottom-30 w-1/3 z-10 pointer-events-none select-none"
+      />
       
       <div className="container mx-auto px-4 z-10 text-white">
         <div className="max-w-xl">
