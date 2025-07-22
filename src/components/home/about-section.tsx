@@ -97,7 +97,7 @@ export function AboutSection() {
               </div>
               <div className="bg-muted rounded-lg overflow-hidden shadow-md h-48">
                 <img 
-                  src="/assets/images/engineer-2.jpg" 
+                  src="/assets/images/image4.jpg" 
                   alt="Engineers collaborating" 
                   className="w-full h-full object-cover"
                 />

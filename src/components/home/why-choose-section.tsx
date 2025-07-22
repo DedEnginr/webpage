@@ -38,7 +38,7 @@ export function WhyChooseSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {reasons.map((reason, index) => (
             <div key={index} className="bg-gray-50 p-6 rounded-lg text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-600 mb-4 mx-auto">
+              <div className="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-600 mb-4 mx-auto">
                 <i className={`${reason.icon} text-2xl`}></i>
               </div>
               <h3 className="text-xl font-semibold mb-3">{reason.title}</h3>
