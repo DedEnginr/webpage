@@ -74,14 +74,14 @@ export function AboutSection() {
             <div>
               <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-48">
                 <img 
-                  src="/assets/images/engineer-1.jpg" 
+                  src="/assets/images/engineer-on-panel.jpeg" 
                   alt="Engineer working on control panel" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="bg-muted rounded-lg overflow-hidden shadow-md h-64">
                 <img 
-                  src="/assets/images/factory-automation.jpg" 
+                  src="/assets/images/schneider_vfd.jpg" 
                   alt="Automated factory line" 
                   className="w-full h-full object-cover"
                 />
@@ -90,7 +90,7 @@ export function AboutSection() {
             <div className="mt-8">
               <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-64">
                 <img 
-                  src="/assets/images/control-system.jpg" 
+                  src="/assets/images/wierd-panel.jpg" 
                   alt="Modern control system" 
                   className="w-full h-full object-cover"
                 />

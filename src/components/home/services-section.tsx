@@ -15,14 +15,14 @@ export function ServicesSection() {
       title: "HMI Design & Development",
       description: "User-friendly, intuitive HMI interfaces that provide efficient control and monitoring solutions.",
       link: "/services/hmi-design",
-      image: "/assets/images/control-panel.jpg"
+      image: "/assets/images/hmi.jpg"
     },
     {
       icon: "fas fa-cogs",
       title: "VFD Drive Installation",
       description: "Professional installation and configuration of variable frequency drives for motor control applications.",
       link: "/services/vfd-installation",
-      image: "/assets/images/automation-system.jpg"
+      image: "/assets/images/vfd.jpg"
     },
     {
       icon: "fas fa-robot",
