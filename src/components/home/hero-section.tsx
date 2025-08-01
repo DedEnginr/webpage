@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { useMobile } from "@/hooks/use-mobile";
 
 export function HeroSection() {
+  const isMobile = useMobile();
+
   return (
     <section id="home" className="relative h-[600px] flex items-center">
       {/* Background image with overlay */}
@@ -18,7 +22,8 @@ export function HeroSection() {
       <img
         src="/assets/images/logo-hero.png"
         alt="Overlay Image"
-        className="absolute right-10 bottom-30 w-1/3 z-10 pointer-events-none select-none"
+        className={`absolute z-10 pointer-events-none select-none 
+          ${isMobile ? 'right-4 bottom-20 w-1/2' : 'right-10 bottom-30 w-1/3'}`}
       />
       
       <div className="container mx-auto px-4 z-10 text-white">
@@ -30,9 +35,14 @@ export function HeroSection() {
             Expert PLC programming, HMI design, and control systems integration for modern industries
           </p>
           <div className="space-x-4">
-            <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link to="/services">Our Services</Link>
-            </Button>
+            {/* Scroll to services section */}
+            <ScrollLink to="services" smooth={true} duration={500} offset={-70}>
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                Our Services
+              </Button>
+            </ScrollLink>
+
+            {/* Route to contact page */}
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link to="/contact">Get in Touch</Link>
             </Button>
