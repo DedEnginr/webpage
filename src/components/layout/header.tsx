@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Shield } from "lucide-react";
 import { useMobile } from '@/hooks/use-mobile';
+import { Link as ScrollLink } from 'react-scroll';
 
 export function Header() {
   const isMobile = useMobile();
@@ -12,9 +13,9 @@ export function Header() {
   const navItems = [
     { name: 'HOME', path: '/' },
     { name: 'ABOUT US', path: '#about-us' },
-    { name: 'PRODUCTS', path: '/products' },
-    { name: 'SERVICES', path: '/services' },
-    { name: 'PROJECTS', path: '/projects' },
+    /*{ name: 'PRODUCTS', path: '#products' },*/
+    { name: 'SERVICES', path: '#services' },
+    /*{ name: 'PROJECTS', path: '#projects' },*/
     { name: 'CONTACT US', path: '/contact' }
   ];
 
