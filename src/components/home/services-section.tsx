@@ -64,9 +64,6 @@ export function ServicesSection() {
                 <p className="text-gray-600 text-center">{service.description}</p>
               </CardContent>
               <CardFooter className="pt-0 flex justify-center">
-                <Link to={service.link} className="text-blue-600 hover:text-blue-800">
-                  Read More
-                </Link>
               </CardFooter>
             </Card>
           ))}
