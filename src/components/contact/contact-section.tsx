@@ -4,7 +4,7 @@ import { MAIL, MOBILE } from '@/lib/constants';
 
 const ContactSection = () => {
     return (
-        <div className="container mx-auto my-32 px-4">
+        <section id="contact" className="container mx-auto my-32 px-4">
             <div className="flex flex-wrap justify-center gap-6">
                 {/* Mail Card */}
                 <div className="w-full sm:w-1/3 md:w-1/4 bg-white rounded-lg border border-gray-200 shadow-lg p-6 text-center hover:shadow-xl hover:border-gray-400 transition-all duration-300">
@@ -33,7 +33,7 @@ const ContactSection = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

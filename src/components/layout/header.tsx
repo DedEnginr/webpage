@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Shield } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useMobile } from '@/hooks/use-mobile';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -13,39 +13,14 @@ export function Header() {
   const navItems = [
     { name: 'HOME', path: '/' },
     { name: 'ABOUT US', path: '#about-us' },
-    /*{ name: 'PRODUCTS', path: '#products' },*/
+    // { name: 'PRODUCTS', path: '#products' },
     { name: 'SERVICES', path: '#services' },
-    /*{ name: 'PROJECTS', path: '#projects' },*/
+    // { name: 'PROJECTS', path: '#projects' },
     { name: 'CONTACT US', path: '/contact' }
   ];
 
   return (
     <header className="w-full">
-      {/* Top bar */}
-      {/* <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
-          <div className="flex flex-wrap items-center space-x-6">
-            <div className="flex items-center space-x-2 text-sm">
-              <i className="fas fa-envelope"></i>
-              <a href="mailto:info@tridentautomation.com" className="hover:text-accent-foreground">info@tridentautomation.com</a>
-            </div>
-            <div className="flex items-center space-x-2 text-sm">
-              <i className="fas fa-phone"></i>
-              <a href="tel:+1-555-123-4567" className="hover:text-accent-foreground">+1-555-123-4567</a>
-            </div>
-            <div className="hidden md:flex items-center space-x-2 text-sm">
-              <i className="far fa-clock"></i>
-              <span>Mon-Fri: 8:00am - 6:00pm</span>
-            </div>
-          </div>
-          <div>
-            <Button variant="outline" size="sm" className="bg-accent hover:bg-accent/80 text-accent-foreground border-none text-xs">
-              GET A QUOTE
-            </Button>
-          </div>
-        </div>
-      </div> */}
-
       {/* Main header */}
       <div className="bg-card py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center px-4">
@@ -68,30 +43,57 @@ export function Header() {
               </SheetTrigger>
               <SheetContent>
                 <nav className="flex flex-col space-y-4 mt-6">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.path}
-                      className="py-2 hover:text-primary font-medium"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+                  {navItems.map((item) =>
+                    item.path.startsWith('#') ? (
+                      <ScrollLink
+                        key={item.name}
+                        to={item.path.slice(1)} // remove '#'
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="py-2 hover:text-primary font-medium cursor-pointer"
+                      >
+                        {item.name}
+                      </ScrollLink>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        to={item.path}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="py-2 hover:text-primary font-medium"
+                      >
+                        {item.name}
+                      </Link>
+                    )
+                  )}
                 </nav>
               </SheetContent>
             </Sheet>
           ) : (
             <nav className="hidden md:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className="text-foreground hover:text-primary font-medium text-sm transition-colors duration-200"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navItems.map((item) =>
+                item.path.startsWith('#') ? (
+                  <ScrollLink
+                    key={item.name}
+                    to={item.path.slice(1)}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    className="text-foreground hover:text-primary font-medium text-sm transition-colors duration-200 cursor-pointer"
+                  >
+                    {item.name}
+                  </ScrollLink>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-foreground hover:text-primary font-medium text-sm transition-colors duration-200"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
             </nav>
           )}
         </div>

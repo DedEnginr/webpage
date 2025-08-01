@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, Clock, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import useMobile from '@/hooks/use-mobile';
+import { useMobile } from '@/hooks/use-mobile';
+
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function Header() {
     { name: 'PRODUCTS', href: '/#products' },
     { name: 'SERVICES', href: '/#services' },
     { name: 'PROJECTS', href: '/#projects' },
-    { name: 'CONTACT US', href: '/#contact' }
+    { name: 'CONTACT US', href: '/contact-us' }
   ];
 
   return (

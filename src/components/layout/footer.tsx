@@ -18,19 +18,20 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Services', 'Contact Us'].map((item) => (
+              {['Home', 'About Us', 'Services', 'Contact'].map((item) => (
                 <li key={item}>
-                  <Link 
-                    to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`} 
+                  <a
+                    href={`#${item.toLowerCase().replace(' ', '-')}`}
                     className="hover:text-accent-foreground transition-colors duration-200"
                   >
-                    <span className="mr-2">»</span>
+                    <span className="mr-2">➤</span>
                     {item}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
+
 
           {/* Products */}
           <div>
