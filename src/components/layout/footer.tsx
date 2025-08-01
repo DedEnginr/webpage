@@ -60,8 +60,8 @@ export function Footer() {
               <a href="tel:+91 73387 43478" className="hover:text-accent-foreground transition-colors duration-200">+91 73387 43478</a>
             </p>
             <p className="mb-4">
-              <a href="mailto:info@tridentautomation.com" className="hover:text-accent-foreground transition-colors duration-200">
-                info@tridentautomation.com
+              <a href="mailto:admin@tridentautomation.in" className="hover:text-accent-foreground transition-colors duration-200">
+                admin@tridentautomation.in
               </a>
             </p>
             <div className="flex space-x-4">
