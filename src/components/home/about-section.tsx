@@ -13,7 +13,7 @@ export function AboutSection() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Expertise in Industrial Automation</h3>
             <p className="mb-4 text-foreground/90">
-              Our team of engineers and technicians specialize in designing, implementing, and maintaining automated systems for various industries including manufacturing, food processing, pharmaceuticals, and more.
+              Our team of engineers and technicians specializes in designing, implementing, and maintaining automated systems for various industries including manufacturing, food processing, pharmaceuticals, and more.
             </p>
             <p className="mb-6 text-foreground/90">
               We combine cutting-edge technology with practical industry knowledge to deliver solutions that increase efficiency, reduce downtime, and optimize production processes.

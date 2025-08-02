@@ -39,7 +39,7 @@ export function ServicesSection() {
         <div className="text-center mb-12">
           <div className="text-blue-600 font-semibold mb-2">OUR SERVICES</div>
           <h2 className="text-3xl font-bold mb-4">
-            With Trustworthy Service And Expertise, We're Here To Help.
+            With Trustworthy Service and Expertise, We're Here to Help.
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Our team of experienced engineers delivers reliable automation solutions across a range of industrial applications.
