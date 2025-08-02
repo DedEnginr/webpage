@@ -31,7 +31,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          
+
           {/* Products */}
           <div>
             <h3 className="text-xl font-bold mb-4">OUR SERVICES</h3>
@@ -77,9 +77,13 @@ export function Footer() {
       </div>
       
       {/* Copyright */}
-      <div className="bg-accent py-4">
-        <div className="container mx-auto px-4 text-center text-sm">
-          <p>© Copyright - Trident Automation - All Rights Reserved.</p>
+      <div className="bg-muted/80 py-4 border-t border-border">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
+          <p className="mb-2 md:mb-0">© 2025 Trident Automation — All Rights Reserved.</p>
+          <div className="flex items-center space-x-2">
+            <img src="/assets/images/logo.png" alt="Trident Logo" className="h-5 w-auto" />
+            <span className="font-medium tracking-wide text-xs md:text-sm">Trident Automation</span>
+          </div>
         </div>
       </div>
     </footer>
