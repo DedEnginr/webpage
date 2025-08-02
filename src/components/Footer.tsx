@@ -42,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Our Products */}
+          {/* 
           <div>
             <h3 className="text-xl font-bold mb-6">OUR PRODUCTS</h3>
             <ul className="space-y-3">
@@ -63,6 +63,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          Our Products */}
 
           {/* Contact Us */}
           <div>

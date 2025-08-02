@@ -31,21 +31,15 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
-
+          
           {/* Products */}
           <div>
             <h3 className="text-xl font-bold mb-4">OUR SERVICES</h3>
             <ul className="space-y-2">
               {['PLCs', 'HMIs', 'Drives', 'Servo Systems'].map((item) => (
-                <li key={item}>
-                  <Link 
-                    to={`/products/${item.toLowerCase().replace(' ', '-')}`} 
-                    className="hover:text-accent-foreground transition-colors duration-200"
-                  >
-                    <span className="mr-2">»</span>
-                    {item}
-                  </Link>
+                <li key={item} className="text-primary-foreground hover:text-accent-foreground transition-colors duration-200">
+                  <span className="mr-2">»</span>
+                  {item}
                 </li>
               ))}
             </ul>
