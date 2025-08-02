@@ -23,7 +23,7 @@ export function HeroSection() {
         src="/assets/images/logo-hero.png"
         alt="Overlay Image"
         className={`absolute z-10 pointer-events-none select-none 
-          ${isMobile ? 'right-1 bottom-75 w-1/3' : 'right-10 bottom-30 w-1/3'}`}
+          ${isMobile ? 'right-1 bottom-90 w-1/3' : 'right-10 bottom-30 w-1/3'}`}
       />
       
       <div className="container mx-auto px-4 z-10 text-white">
