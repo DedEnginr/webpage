@@ -34,36 +34,45 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="text-blue-600 font-semibold mb-2">OUR SERVICES</div>
-          <h2 className="text-3xl font-bold mb-4">
-            With Trustworthy Service and Expertise, We're Here to Help.
+        <div className="text-center mb-16">
+          <p className="text-blue-600 uppercase text-sm tracking-widest font-semibold mb-2">Our Services</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            With Trustworthy Service and Expertise, We’re Here to Help.
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Our team of experienced engineers delivers reliable automation solutions across a range of industrial applications.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="border-t-4 border-blue-600 overflow-hidden">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
+            <Card
+              key={index}
+              className="bg-background shadow-sm hover:shadow-lg transition-all duration-300 rounded-xl overflow-hidden border border-border"
+            >
+              <div className="h-44 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <CardContent className="pt-6">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-600 mb-4 mx-auto">
-                  <i className={`${service.icon} text-2xl`}></i>
+              <CardContent className="p-6">
+                <div className="flex items-center justify-center text-blue-600 mb-4 text-xl">
+                  <i className={service.icon}></i>
                 </div>
-                <h3 className="text-xl font-semibold text-center mb-4">{service.title}</h3>
-                <p className="text-gray-600 text-center">{service.description}</p>
+                <h3 className="text-lg font-semibold text-center text-primary mb-3">{service.title}</h3>
+                <p className="text-sm text-muted-foreground text-center">{service.description}</p>
               </CardContent>
-              <CardFooter className="pt-0 flex justify-center">
+              <CardFooter className="pb-6 flex justify-center">
+                <Link
+                  to={service.link}
+                  className="text-blue-600 text-sm font-medium hover:underline"
+                >
+                  Learn More →
+                </Link>
               </CardFooter>
             </Card>
           ))}
