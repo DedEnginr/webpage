@@ -6,7 +6,7 @@ import ContactSection from "@/components/contact/contact-section";
 export default function ContactPage() {
   return (
     <Layout>
-      <div className="bg-primary flex items-center justify-between">
+      <div className="bg-primary flex h-60 sm:h-80 items-center justify-between">
         <div className="mx-auto px-4 text-primary-foreground">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="max-w-2xl mx-auto">
@@ -14,7 +14,7 @@ export default function ContactPage() {
             Get in touch with our team of experts today.
           </p>
         </div>
-        <div className="flex-shrink-0 w-1/2">
+        <div className="hidden sm:block flex-shrink-0 w-1/2">
           <img
             className="w-full h-80 object-cover shadow-md"
             src="https://picsum.photos/seed/gpt/200/300"

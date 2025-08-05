@@ -10,21 +10,21 @@ export function PartnersSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 sm:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold">Brands We Offer Supply & Support</h2>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-8">
           {partners.map((partner, index) => (
-            <div 
+            <div
               key={index}
-              className="w-36 h-36 flex items-center justify-center p-4 transition-all duration-300"
+              className="w-24 sm:w-36 h-24 sm:h-36 flex items-center justify-center p-4 transition-all duration-300"
             >
-              <img 
-                src={partner.logo} 
-                alt={`${partner.name} logo`} 
+              <img
+                src={partner.logo}
+                alt={`${partner.name} logo`}
                 loading="lazy"
                 className="max-w-full max-h-full"
               />

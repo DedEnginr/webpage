@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">TRIDENT AUTOMATION</h3>
             <p className="mb-4">
-              We provide industrial automation solutions and system integration for PLC automation 
+              We provide industrial automation solutions and system integration for PLC automation
               and a wide range of products across all major brands.
             </p>
           </div>
@@ -18,14 +18,14 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">QUICK LINKS</h3>
             <ul className="space-y-2">
-              {['Home', 'About Us', 'Services', 'Contact'].map((item) => (
-                <li key={item}>
+              {[{ name: 'Home', link: "#home" }, { name: 'About Us', link: "#about-us" }, { name: 'Services', link: "#services" }, { name: 'Contact', link: "/contact" }].map((item) => (
+                <li key={item.name}>
                   <a
-                    href={`#${item.toLowerCase().replace(' ', '-')}`}
+                    href={item.link}
                     className="hover:text-accent-foreground transition-colors duration-200"
                   >
                     <span className="mr-2">➤</span>
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -61,10 +61,10 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a 
+                <a
                   key={social}
-                  href={`https://${social}.com`} 
-                  target="_blank" 
+                  href={`https://${social}.com`}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-accent-foreground transition-colors duration-200"
                 >
@@ -75,7 +75,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      
+
       {/* Copyright */}
       <div className="bg-muted/80 py-4 border-t border-border">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">

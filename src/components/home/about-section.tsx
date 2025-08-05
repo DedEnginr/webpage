@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section id="about-us" className="py-20 bg-background">
+    <section id="about-us" className="py-12 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-primary">Who We Are</h2>
@@ -8,7 +8,7 @@ export function AboutSection() {
             Trident Automation is a leading provider of industrial automation solutions with years of experience in the field.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-4">Expertise in Industrial Automation</h3>
@@ -18,7 +18,7 @@ export function AboutSection() {
             <p className="mb-6 text-foreground/90">
               We combine cutting-edge technology with practical industry knowledge to deliver solutions that increase efficiency, reduce downtime, and optimize production processes.
             </p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               <div className="flex items-start">
                 <div className="mr-4 bg-primary/10 p-2 rounded-lg">
@@ -31,7 +31,7 @@ export function AboutSection() {
                   <p className="text-sm text-muted-foreground">Industry-certified professionals</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="mr-4 bg-primary/10 p-2 rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -43,7 +43,7 @@ export function AboutSection() {
                   <p className="text-sm text-muted-foreground">Round-the-clock technical assistance</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="mr-4 bg-primary/10 p-2 rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,7 +55,7 @@ export function AboutSection() {
                   <p className="text-sm text-muted-foreground">Quick implementation of solutions</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="mr-4 bg-primary/10 p-2 rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -69,36 +69,36 @@ export function AboutSection() {
               </div>
             </div>
           </div>
-          
+
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-48">
-                <img 
-                  src="/assets/images/engineer-on-panel.jpeg" 
-                  alt="Engineer working on control panel" 
+              <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-32 sm:h-48">
+                <img
+                  src="/assets/images/engineer-on-panel.jpeg"
+                  alt="Engineer working on control panel"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-muted rounded-lg overflow-hidden shadow-md h-64">
-                <img 
-                  src="/assets/images/schneider_vfd.jpg" 
-                  alt="Automated factory line" 
+              <div className="bg-muted rounded-lg overflow-hidden shadow-md h-36 sm:h-64">
+                <img
+                  src="/assets/images/schneider_vfd.jpg"
+                  alt="Automated factory line"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
             <div className="mt-8">
-              <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-64">
-                <img 
-                  src="/assets/images/wierd-panel.jpg" 
-                  alt="Modern control system" 
+              <div className="bg-muted rounded-lg overflow-hidden shadow-md mb-4 h-36 sm:h-64">
+                <img
+                  src="/assets/images/wierd-panel.jpg"
+                  alt="Modern control system"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="bg-muted rounded-lg overflow-hidden shadow-md h-48">
-                <img 
-                  src="/assets/images/image4.jpg" 
-                  alt="Engineers collaborating" 
+              <div className="bg-muted rounded-lg overflow-hidden shadow-md h-32 sm:h-48">
+                <img
+                  src="/assets/images/image4.jpg"
+                  alt="Engineers collaborating"
                   className="w-full h-full object-cover"
                 />
               </div>
