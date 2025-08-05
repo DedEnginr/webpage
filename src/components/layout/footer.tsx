@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 export function Footer() {
   return (
@@ -20,13 +21,26 @@ export function Footer() {
             <ul className="space-y-2">
               {[{ name: 'Home', link: "#home" }, { name: 'About Us', link: "#about-us" }, { name: 'Services', link: "#services" }, { name: 'Contact', link: "/contact" }].map((item) => (
                 <li key={item.name}>
-                  <a
-                    href={item.link}
-                    className="hover:text-accent-foreground transition-colors duration-200"
-                  >
-                    <span className="mr-2">➤</span>
-                    {item.name}
-                  </a>
+                  {item.link.startsWith('#') ? (
+                    <ScrollLink
+                      key={item.name}
+                      to={item.link.slice(1)} // remove '#'
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                      className="py-2 hover:text-accent-foreground font-medium cursor-pointer"
+                    >
+                      {item.name}
+                    </ScrollLink>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      to={item.link}
+                      className="py-2 hover:text-accent-foreground font-medium"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
